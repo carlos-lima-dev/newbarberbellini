@@ -58,12 +58,12 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-     <section className="relative w-full h-screen">
-          <img
-            src={heroImage}
-            alt="Hero - Produtos da barbearia"
-            className="absolute top-0 left-0 w-full h-full object-cover"
-           />
+    <section className="relative w-full h-[500px]">
+        <img
+          src={heroImage}
+          alt="Hero - Produtos da barbearia"
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-black/50 z-10" />
       </section>
 
