@@ -75,18 +75,20 @@ export default function Home() {
         {/* Imagem de fundo */}
         {/* Slides */}
         {slides.map((img, index) => (
-          <picture>
-            <source media="(min-width: 768px)" srcSet={img.desktop} />
-            <source media="(max-width: 767px)" srcSet={img.mobile} />
-            <img
-              key={index}
-              src={img}
-              alt={`Slide ${index + 1}`}
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
-                index === currentSlide ? "opacity-100 z-0" : "opacity-0 z-0"
-              }`}
-            />
-          </picture>
+          <div className="absolute top-0 left-0 w-full h-full aspect-[4/5] sm:aspect-[16/9]">
+            <picture>
+              <source media="(min-width: 768px)" srcSet={img.desktop} />
+              <source media="(max-width: 767px)" srcSet={img.mobile} />
+              <img
+                key={index}
+                src={img}
+                alt={`Slide ${index + 1}`}
+                className={`w-full h-full object-cover transition-opacity duration-1000 ${
+                  index === currentSlide ? "opacity-100 z-0" : "opacity-0 z-0"
+                }`}
+              />
+            </picture>
+          </div>
         ))}
 
         {/* Overlay escuro */}
