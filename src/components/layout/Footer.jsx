@@ -11,7 +11,7 @@ export default function Footer() {
         <div>
           <h2 className="text-yellow font-serif text-xl mb-2">BARBEARIA</h2>
           <p className="text-sm text-gray-300">
-            The Barbers Studio em Guimarães. Tradição, estilo e atitude — tudo num só lugar.
+             Bellini Barbearia em Guimarães. Tradição, estilo e atitude — tudo num só lugar.
           </p>
         </div>
 
@@ -20,7 +20,7 @@ export default function Footer() {
           <h3 className="text-lg mb-2 text-yellow">Contacto</h3>
           <ul className="space-y-2 text-sm">
             <li className="flex items-center gap-2">
-              <Phone size={16} /> (+351) 968 896 660
+              <Phone size={16} /> (+351) 968 000 000
             </li>
             <li className="flex items-center gap-2">
               <Mail size={16} /> info@bellinibarbearia.pt
