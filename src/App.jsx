@@ -5,7 +5,7 @@ import Products from "./pages/Products";
 import Contacts from "./pages/Contacts";
 import "./App.css";
 import Layout from "../src/components/layout/Layout";
-
+import { Navigate } from "react-router-dom";
 function App() {
   return (
     <Router>
@@ -16,7 +16,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/contacts" element={<Contacts />} />
 
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>
     </Router>
@@ -24,3 +24,4 @@ function App() {
 }
 
 export default App;
+
