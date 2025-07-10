@@ -93,7 +93,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50 z-10" />
 
         {/* Botão centralizado mais abaixo */}
-        <div className="relative z-20 translate-y-64">
+            <div className="relative z-20 translate-y-34 sm:translate-y-64">
           <a
             href="https://google.com"
             rel="noopener noreferrer"
