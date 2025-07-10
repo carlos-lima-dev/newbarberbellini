@@ -19,17 +19,17 @@ export default defineConfig({
         start_url: "/",
         icons: [
           {
-            src: "logo2.png",
+            src: "/logo2.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "logo2.png",
+            src: "/logo2.png",
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "logo2.png",
+            src: "/logo2.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",
@@ -39,3 +39,4 @@ export default defineConfig({
     }),
   ],
 });
+
